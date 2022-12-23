@@ -4,17 +4,39 @@ flex-direction: column;
 margin: 0;
 }
 
-.header,.intro{
-    max-width: 600px;
+
+.header, .intro{
+    max-width: 900px;
     width:100%;
     margin: 0 auto;
+}
+.header .logo{
+    font-size: 24px;
+    font-weight: bold;
+    color:white;
+}
+
+.header ul{
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .one{
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
+}
+
+.intro .title{
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+
+.intro{
+    font-size: 18px;
+    color:#E5E7EB;
 }
 
 .one .header{
@@ -23,9 +45,11 @@ margin: 0;
     align-items: center;
 }
 
+
+
 .one ul{
     display: flex;
-    gap: 8px;
+    gap: 30px;
 }
 
 li{
@@ -42,15 +66,18 @@ li{
 }
 
 .intro .content{
- max-width: 600px;
+ max-width: 800px;
  width:100%;
+ display: flex;
+ flex-direction: column;
+ gap: 8px;
+ align-items: flex-start;
     
 }
 
 .intro .image{
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,12 +93,12 @@ li{
 .two {
     display: flex;
     flex-direction: column;
-    padding: 30px 0 60px 0;
-    gap: 20px;
+    padding: 50px 0 80px 0;
+    gap: 50px;
     
 }
 .two .title, .two .cards{
-    max-width: 600px;
+    max-width: 800px;
     width:100%;
     margin: 0 auto;
 }
@@ -79,6 +106,8 @@ li{
 .two .title{
     text-align: center;
     font-weight: 900;
+    font-size: 36px;
+    color:#1F2937;
 }
 
 .two .card{
@@ -90,15 +119,98 @@ li{
 
 .two .cards{
     display: flex;
-    gap: 10px;
+    gap: 40px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
+}
+
+.card .text{
+    color: rgb(117, 117, 117);
+    width: 150px;
 }
 
 .two .img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border: 3px solid green;
     border-radius: 15%;
+}
+
+.three{
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    padding: 100px 0 100px 0;
+}
+
+.three .author{
+    align-self: flex-end;
+    text-align: end;
+    max-width: 800px;
+    width:100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+ .three div{
+    max-width: 800px;
+    width:100%;
+    margin: 0 auto;
+    font-size: 36px;
+    color:#1F2937;
+
+}
+
+.four{
+    max-width: 800px;
+    width:100%;
+    margin: 0 auto;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.four .content{
+    display: flex;
+    justify-content: space-around;
+    background-color: #3882F6;
+    border-radius: 10px;
+    padding: 30px 30px 30px 30px;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+.four .action{
+    font-weight: bold;
+    color:#F9FAF8;
+    font-size: 18px;
+}
+
+.four .Signup{
+    color:#E5E7EB
+}
+
+button{
+    border-radius: 8px;
+    padding: 5px 20px 5px 20px;
+    background-color: #3882F6;
+    border-color: white;
+    border-style: solid;
+    color: white;
+}
+.intro button{
+    border: none;
+}
+
+
+.footer{
+    background-color: #1F2937;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
 }
